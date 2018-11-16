@@ -1,0 +1,15 @@
+LoadPlugin "write_graphite"
+<Plugin "write_graphite">
+  <Node "<%= node['graphite']['hostname'] %>">
+    Host "<%= node['graphite']['hostname'] %>"
+    Port 2003
+    Prefix ""
+    Postfix ""
+    Protocol "tcp"
+    LogSendErrors false
+    EscapeCharacter "_"
+    SeparateInstances true
+    StoreRates false
+    AlwaysAppendDS false
+  </Node>
+</Plugin>

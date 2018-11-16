@@ -1,0 +1,1 @@
+default['graphite']['hostname'] = 'graphite'
